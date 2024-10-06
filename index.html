@@ -3,66 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegraph Page</title>
+    <title>Telegraph - Simple Online Publishing Tool</title>
     <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        h1 {
-            font-size: 32px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .author {
-            font-size: 14px;
-            color: #999;
-            margin-bottom: 30px;
-        }
-        p {
-            font-size: 18px;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            background-color: #f5f5f5;
+            color: #333;
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2c3e50;
+        }
+
+        .subheading {
+            font-size: 18px;
+            color: #95a5a6;
             margin-bottom: 20px;
         }
-        a {
-            color: #3498db;
-            text-decoration: none;
+
+        p {
+            margin-bottom: 20px;
+            font-size: 18px;
         }
-        a:hover {
-            text-decoration: underline;
-        }
+
         img {
             max-width: 100%;
             height: auto;
-            margin-bottom: 20px;
+            margin: 20px 0;
+        }
+
+        a {
+            color: #2980b9;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .button:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #7f8c8d;
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                font-size: 16px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Your Telegraph Title</h1>
-    <div class="author">By Author Name, Published on <span id="date"></span></div>
+    <header>
+        <h1>Telegraph: Simple Online Publishing Tool</h1>
+        <p class="subheading">A guide to creating web pages quickly using Telegraph by Telegram</p>
+    </header>
 
-    <p>Your Telegraph-style content goes here. Add any text, links, and images just like you would in a Telegraph post.</p>
+    <p>Telegraph is a simple online publishing tool developed by <strong>Telegram</strong> that allows users to create web pages quickly and easily. It’s a lightweight tool for posting articles, blogs, or any form of content without needing technical expertise.</p>
 
-    <p>For example, <a href="#">this is a link</a> to another page, or you can add more <strong>bold text</strong> and <em>italic text</em> as needed.</p>
+    <img src="https://via.placeholder.com/800x400" alt="Telegraph Example Image">
 
-    <img src="your-image-url-here.jpg" alt="Example Image">
+    <h2>How Does Telegraph Work?</h2>
+    <p>Using Telegraph is straightforward. Users simply visit <a href="https://telegra.ph" target="_blank">Telegraph</a>, provide a title for their page, input their name, and start writing their content. Once finished, they can click "Publish," and Telegraph will generate a unique URL for their page that can be shared with others.</p>
 
-    <p>End your post with a conclusion or a call to action.</p>
+    <h2>Features of Telegraph</h2>
+    <ul>
+        <li>Quick setup with no sign-in required</li>
+        <li>Ability to add text, images, and links</li>
+        <li>Simple formatting options for bold, italic, and links</li>
+        <li>Responsive design for reading on mobile devices</li>
+    </ul>
 
-    <script>
-        // Set current date dynamically
-        const dateElement = document.getElementById('date');
-        const currentDate = new Date().toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric'
-        });
-        dateElement.textContent = currentDate;
-    </script>
+    <p>If you're interested in quickly publishing content without the need for a full website or blog, Telegraph is the perfect tool. Try it out today!</p>
+
+    <a href="https://telegra.ph" target="_blank" class="button">Visit Telegraph</a>
+
+    <footer>
+        <p>&copy; 2024 <a href="https://github.com/your-username">Your GitHub Page</a>. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
