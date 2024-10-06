@@ -3,21 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Telegraph Style Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Telegraph Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .author {
+            font-size: 14px;
+            color: #999;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Telegraph Title</h1>
-        <div class="author">By <span id="authorName">Author Name</span>, Published on <span id="publishDate"></span></div>
-        
-        <div class="content">
-            <p>This is an example Telegraph-style content. You can add text, links, and images, and format your content just like in Telegraph.</p>
-            <p>Here’s a link to <a href="#">another resource</a>, and this is <strong>bold text</strong> or <em>italic text</em>.</p>
-            <img src="image-url.jpg" alt="Sample Image">
-        </div>
-    </div>
+    <h1>Your Telegraph Title</h1>
+    <div class="author">By Author Name, Published on <span id="date"></span></div>
 
-    <script src="script.js"></script>
+    <p>Your Telegraph-style content goes here. Add any text, links, and images just like you would in a Telegraph post.</p>
+
+    <p>For example, <a href="#">this is a link</a> to another page, or you can add more <strong>bold text</strong> and <em>italic text</em> as needed.</p>
+
+    <img src="your-image-url-here.jpg" alt="Example Image">
+
+    <p>End your post with a conclusion or a call to action.</p>
+
+    <script>
+        // Set current date dynamically
+        const dateElement = document.getElementById('date');
+        const currentDate = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        dateElement.textContent = currentDate;
+    </script>
 </body>
 </html>
